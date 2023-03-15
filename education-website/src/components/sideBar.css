@@ -1,0 +1,84 @@
+:root {
+    --darkpurple: #18122B;
+    --white: #ffffff;
+    --lightest:#F1DEC9;
+    --iconColors:#C8B6A6;
+    --darkbrown: #8D7B68;
+  }
+
+
+  .sidebar_maincontainer {
+    width: 13%;
+    height: 100%;
+    background-color: var(--iconColors);
+    position: absolute;
+    overflow: hidden; /* hide horizontal scrollbar */
+  }
+  
+  .logo_container {
+    padding: 10px;
+  }
+  
+  .button_container {
+    height: 600px; /* set fixed height for container */
+    overflow-y: auto; /* enable vertical scrollbar */
+    overflow-x: hidden; /* hide horizontal scrollbar */
+    padding: 10px;
+    
+    /* Change scrollbar styles */
+    scrollbar-width: thin;
+    scrollbar-color: #999999 var(--iconColors);
+  }
+  
+  .button_container::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .button_container::-webkit-scrollbar-thumb {
+    background-color: #999999;
+    border-radius: 20px;
+  }
+  
+  .button_container::-webkit-scrollbar-thumb:hover {
+    background-color: #666666;
+  }
+  
+  .button_container::-webkit-scrollbar-thumb:active {
+    background-color: #333333;
+  }
+  
+  
+  .sidebar_button {
+    align-items: center;
+    width: 95%;
+    height: 2.8rem;
+    margin-bottom: 0.5rem;
+    border-color:var(--darkbrown) ;
+    border-width: 2px;
+  }
+  
+
+  @media only screen and (max-width: 800px) {
+    /* modify styles for screens smaller than 768px */
+    .sidebar_maincontainer {
+      width: 100%;
+      position: relative;
+    }
+  
+    .button_container {
+      height: auto;
+      overflow-y: visible;
+      overflow-x: visible;
+    }
+  
+    .sidebar_button {
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    /* modify styles for screens smaller than 480px */
+    .sidebar_button {
+      /* adjust height or font size */
+    }
+  }

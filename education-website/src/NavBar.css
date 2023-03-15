@@ -9,10 +9,12 @@
 .NavBar_Container{
 background-color: var(--lightest);
 height: 4rem;
+width: 100%;
 align-items: center;
 justify-content: end;
 display: flex;
-font-size: 1.3rem
+font-size: 1.3rem;
+position: absolute;
 }
 .nav-item{
     cursor: pointer;
