@@ -1,0 +1,20 @@
+
+:root {
+    --darkpurple: #18122B;
+    --white: #ffffff;
+    --lightest:#F1DEC9;
+    --iconColors:#C8B6A6;
+  }
+
+.NavBar_Container{
+background-color: var(--lightest);
+height: 4rem;
+align-items: center;
+justify-content: end;
+display: flex;
+font-size: 1.3rem
+}
+.nav-item{
+    cursor: pointer;
+    
+}
