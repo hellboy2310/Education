@@ -1,5 +1,6 @@
 import React from 'react'
 import './sideBar.css';
+import { Link } from "react-router-dom";
 function SideBar() {
   return (
     <div className='sidebar_maincontainer'>
@@ -7,7 +8,8 @@ function SideBar() {
             <h1>Miles Education</h1>                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
         </div>
         <div className='button_container'>
-        <button type="button" class="btn btn-outline-secondary sidebar_button">Launchpad</button>
+          <Link to ='/'><button type="button" class="btn btn-outline-secondary sidebar_button">Launchpad</button></Link>
+        
         <button type="button" class="btn btn-outline-secondary sidebar_button">CMA Part-1</button>
         <button type="button" class="btn btn-outline-secondary sidebar_button">CMA Part-2</button>
         <button type="button" class="btn btn-outline-secondary sidebar_button">Study Planner</button>
