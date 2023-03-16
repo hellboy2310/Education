@@ -1,22 +1,20 @@
-import logo from './logo.svg';
+
 import './App.css';
 import NavBar from './NavBar';
+import LaunchPad from './components/launchPad';
+import SideBar from './components/sideBar';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import SideBar from './components/sideBar';
 
 function App() {
   return (
-   <div className='App_Container'>
-    
-    
-    
-    <NavBar></NavBar>  
-    <SideBar></SideBar>
-    
-    
-    
-   </div>
+    <BrowserRouter>
+      <NavBar/>
+      <SideBar/> 
+      <Routes>
+        <Route path="/" element={<LaunchPad />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

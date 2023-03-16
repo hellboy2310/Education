@@ -14,7 +14,8 @@ align-items: center;
 justify-content: end;
 display: flex;
 font-size: 1.3rem;
-position: absolute;
+position: fixed;
+z-index: 2;
 }
 .nav-item{
     cursor: pointer;

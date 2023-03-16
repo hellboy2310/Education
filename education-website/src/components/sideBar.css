@@ -8,12 +8,16 @@
 
 
   .sidebar_maincontainer {
-    width: 13%;
+    z-index: 2;
+    width: 12%;
     height: 100%;
     background-color: var(--iconColors);
-    position: absolute;
+    position: fixed;
+    top: 0;
+    bottom: 0;
     overflow: hidden; /* hide horizontal scrollbar */
   }
+  
   
   .logo_container {
     padding: 10px;
@@ -58,27 +62,4 @@
   }
   
 
-  @media only screen and (max-width: 800px) {
-    /* modify styles for screens smaller than 768px */
-    .sidebar_maincontainer {
-      width: 100%;
-      position: relative;
-    }
   
-    .button_container {
-      height: auto;
-      overflow-y: visible;
-      overflow-x: visible;
-    }
-  
-    .sidebar_button {
-      width: 100%;
-    }
-  }
-  
-  @media only screen and (max-width: 480px) {
-    /* modify styles for screens smaller than 480px */
-    .sidebar_button {
-      /* adjust height or font size */
-    }
-  }
