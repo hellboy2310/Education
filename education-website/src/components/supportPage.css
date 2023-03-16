@@ -1,0 +1,21 @@
+:root {
+    --darkpurple: #18122B;
+    --white: #ffffff;
+    --lightest: #F1DEC9;
+    --iconColors: #C8B6A6;
+}
+.supportpage_main_container {
+    
+    padding: 6% 3% 5% 15%;
+}
+.supportpage_card{
+    background-color: var(--lightest);
+    height: 450px;
+}
+.supportpage_input_container{
+    
+    margin-top: 2%;
+}
+.supportpage_sendmail-btn{
+    margin-top: 5%;
+}

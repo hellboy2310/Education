@@ -1,5 +1,6 @@
 import React from 'react'
 import './launchPad.css'
+import { Link } from "react-router-dom";
 
 function LaunchPad() {
     return (
@@ -10,7 +11,8 @@ function LaunchPad() {
                         <div class="card-body">
                             <h5 class="card-title">Special title treatment</h5>
                             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a  class="btn btn-primary">Go somewhere</a>
+                            <Link to = '/support'><a  class="btn btn-primary">support</a></Link>
+                            
                         </div>
                     </div>
                 </div>
