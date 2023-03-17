@@ -2,17 +2,20 @@ import React from 'react'
 import './supportPage.css'
 import { useState } from 'react';
 
+// const mailSender = require('../backend/mailSender')
+
 function SupportPage() {
 
     const [mail, setEmail] = useState('');
-    const [pass, setpassword] = useState(0);
-    const [body, setBody] = useState(0);
+    const [subject, setsubject] = useState('');
+    const [body, setBody] = useState('');
 
 
         const handleDetails = () =>{
             console.log(mail);
-            console.log(pass);
+            console.log(subject);
             console.log(body);
+            // mailSender(mail,subject,body);
         }
 
     return (
@@ -33,7 +36,7 @@ function SupportPage() {
                             <div class="row mb-3 supportpage_input_container">
                                 <label for="inputPassword3" class="col-sm-2 col-form-label"  >Subject</label>
                                 <div class="col-sm-10">
-                                    <input type="subject" class="form-control" id="inputPassword3" placeholder='Enter your subject'  onChange={(e)=>setpassword(e.target.value)} />
+                                    <input type="subject" class="form-control" id="inputPassword3" placeholder='Enter your subject'  onChange={(e)=>setsubject(e.target.value)} />
                                 </div>
                             </div>
                             <div class="row mb-3 supportpage_input_container">
