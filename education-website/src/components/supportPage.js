@@ -2,7 +2,7 @@ import React from 'react'
 import './supportPage.css'
 import { useState } from 'react';
 
-// const mailSender = require('../backend/mailSender')
+import mailSender from '../backend/mailSender';
 
 function SupportPage() {
 
@@ -15,7 +15,7 @@ function SupportPage() {
             console.log(mail);
             console.log(subject);
             console.log(body);
-            // mailSender(mail,subject,body);
+            mailSender(mail,subject,body);
         }
 
     return (
