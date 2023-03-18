@@ -1,9 +1,28 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import './sectionA.css'
+import { useState } from 'react';
 
 function SectionA() {
+    const [showSection, setShowSection] = useState(false);
+
+    const handleArrowClick = () => {
+        setShowSection(!showSection);
+        if (!showSection) {
+          const otherSections = document.querySelectorAll('.card-body.section_a:not(.section_selection_a)');
+          otherSections.forEach(section => {
+            section.style.transform = 'translateY(6rem)';
+          });
+        } else {
+          const otherSections = document.querySelectorAll('.card-body.section_a:not(.section_selection_a)');
+          otherSections.forEach(section => {
+            section.style.transform = 'translateY(0)';
+          });
+        }
+    };
 
     return (
+            
         
 
         <div class="row Cmapart1_main_container" >
@@ -20,7 +39,7 @@ function SectionA() {
                                     </div>
                                     <div class="btn-group mr-2" role="group" aria-label="Second group">
                                        <Link to = '/cmapart1'> <button type="button" class="btn btn-secondary i_am_button_holding-subjects"><i class="fa fa-home" aria-hidden="true"></i></button></Link>
-                                      <Link to='/sectionA'><button type="button" class="btn btn-secondary i_am_button_holding-subjects">A</button></Link>  
+                                      <Link to='/sectionA'><button type="button" class="btn btn-secondary i_am_button_holding-subjects"> A</button></Link>  
                                       <Link to = '/sectionB'>  <button type="button" class="btn btn-secondary i_am_button_holding-subjects">B</button></Link>
                                         <Link to = '/sectionC'><button type="button" class="btn btn-secondary i_am_button_holding-subjects">C</button></Link>
                                         <Link to = '/sectionD'><button type="button" class="btn btn-secondary i_am_button_holding-subjects">D</button></Link>
@@ -46,24 +65,53 @@ function SectionA() {
                 </div>
             </div>
             
-<div class="card-body section_a ">
-<Link to = '/sectionA' style={{textDecoration:'none'}}>A 1.1</Link> 
-</div>
+
+            <div className="card-body section_a">
+      <a href="/sectionA" style={{ textDecoration: 'none' }}>
+        A 1.1
+      </a>
+      <i
+        className="fa fa-arrow-down"
+        aria-hidden="true"
+        onClick={handleArrowClick}
+      ></i>
+      {showSection && (
+        <div className="card-body section_selection_a">
+          <button type="button" className="btn btn-primary">
+            Primary
+          </button>
+          <button type="button" className="btn btn-primary">
+            Primary
+          </button>
+          <button type="button" className="btn btn-primary">
+            Primary
+          </button>
+          <button type="button" className="btn btn-primary">
+            Primary
+          </button>
+        </div>
+      )}
+    </div>
 
 <div class="card-body section_a">
 <Link to = '/sectionB' style={{textDecoration:'none',}}>A 1.2</Link> 
+<i class="fa fa-arrow-down" aria-hidden="true"></i>
 </div>
 <div class="card-body section_a">
-<Link to = '/sectionC' style={{textDecoration:'none',}}>A 1.3</Link> 
+<Link to = '/sectionC' style={{textDecoration:'none',}}>A 1.3</Link>
+<i class="fa fa-arrow-down" aria-hidden="true"></i> 
 </div>
 <div class="card-body section_a">
-<Link to = '/sectionD' style={{textDecoration:'none',}}>A 1.4</Link> 
+<Link to = '/sectionD' style={{textDecoration:'none',}}>A 1.4</Link>
+<i class="fa fa-arrow-down" aria-hidden="true"></i> 
 </div>
 <div class="card-body section_a">
-<Link to = '/sectionE' style={{textDecoration:'none',}}>A 2.1</Link> 
+<Link to = '/sectionE' style={{textDecoration:'none',}}>A 2.1</Link>
+<i class="fa fa-arrow-down" aria-hidden="true"></i> 
 </div>
 <div class="card-body section_a">
-<Link to = '/sectionF' style={{textDecoration:'none',}}>A 2.2</Link> 
+<Link to = '/sectionF' style={{textDecoration:'none',}}>A 2.2</Link>
+<i class="fa fa-arrow-down" aria-hidden="true"></i> 
 </div>
 </div>
         
