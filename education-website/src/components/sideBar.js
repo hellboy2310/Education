@@ -4,13 +4,12 @@ import { Link } from "react-router-dom";
 function SideBar() {
   return (
     <div className='sidebar_maincontainer'>
-        <div className='logo_container'>
-            <h1>Miles Education</h1>                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
-        </div>
-        <div className='button_container'>
-          <Link to ='/'><button type="button" class="btn btn-outline-secondary sidebar_button">Launchpad</button></Link>
-        
-        <button type="button" class="btn btn-outline-secondary sidebar_button">CMA Part-1</button>
+      <div className='logo_container'>
+        <h1>Miles Education</h1>
+      </div>
+      <div className='button_container'>
+        <Link to='/'><button type="button" class="btn btn-outline-secondary sidebar_button">Launchpad</button></Link>
+        <Link to='/cmapart1'> <button type="button" class="btn btn-outline-secondary sidebar_button">CMA Part-1</button></Link>
         <button type="button" class="btn btn-outline-secondary sidebar_button">CMA Part-2</button>
         <button type="button" class="btn btn-outline-secondary sidebar_button">Study Planner</button>
         <button type="button" class="btn btn-outline-secondary sidebar_button">Webinar</button>
@@ -23,7 +22,7 @@ function SideBar() {
         <button type="button" class="btn btn-outline-secondary sidebar_button">Practice Exam</button>
         <button type="button" class="btn btn-outline-secondary sidebar_button">MAC</button>
         <button type="button" class="btn btn-outline-secondary sidebar_button">Assesments</button>
-        </div>
+      </div>
 
     </div>
   )

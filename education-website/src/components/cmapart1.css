@@ -1,0 +1,43 @@
+:root {
+    --darkpurple: #18122B;
+    --white: #ffffff;
+    --lightest:#F1DEC9;
+    --iconColors:#C8B6A6;
+    --darkbrown: #8D7B68;
+  }
+
+
+.Cmapart1_main_container{
+    padding-left: 13rem;
+    padding-top: 6rem;
+    width: 100%;
+    
+    
+}
+@media (max-width: 900px) {
+    
+    .Cmapart1_main_container {
+        
+        padding: 4rem 0.5rem 2rem 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .cmacard1{
+        margin-top: 3%;
+       padding: 0%; 
+   
+   }
+   .cmacard2{
+    margin-top: 3%;
+       padding: 0;
+   }
+    /* .launchPad_row{
+       padding-left: 3rem;
+    }
+    
+    .launchPad_row2{
+       padding-left: 3rem;
+    } */
+   }
