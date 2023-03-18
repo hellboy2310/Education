@@ -42,21 +42,24 @@
     height: 350px;
     background-color: var(--lightest);
 }
-@media (max-width: 900px) {
-    
- .launchPad_container{
-       
-    width: 100%;
-    margin-top: 2rem;
- }   
- .launchPad_row{
-    padding: 0%; 
 
-}
-.launchPad_row2{
-    padding: 0;
-}
- /* .launchPad_row{
+@media (max-width: 900px) {
+    .launchPad_container {
+
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .launchPad_row {
+        padding: 0%;
+
+    }
+
+    .launchPad_row2 {
+        padding: 0;
+    }
+
+    /* .launchPad_row{
     padding-left: 3rem;
  }
  

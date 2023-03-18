@@ -1,43 +1,118 @@
 :root {
     --darkpurple: #18122B;
     --white: #ffffff;
-    --lightest:#F1DEC9;
-    --iconColors:#C8B6A6;
+    --lightest: #F1DEC9;
+    --iconColors: #C8B6A6;
     --darkbrown: #8D7B68;
-  }
+}
 
 
-.Cmapart1_main_container{
+.Cmapart1_main_container {
     padding-left: 13rem;
     padding-top: 6rem;
-    width: 100%;
     
-    
+
+
 }
+
+.cmacard1,
+.cmacard2 {
+    background-color: var(--lightest);
+    height: 20rem;
+}
+
+
+.cmacard1 h2 {
+    color: var(--darkbrown);
+    padding-top: 2rem;
+}
+
+.content_buttons {
+    justify-content: space-around;
+
+}
+
+.box-holding-buttons {
+    height: 4rem;
+    background-color: var(--iconColors);
+}
+
+.i_am_button {
+    background-color: var(--darkbrown);
+    font-size: 11px;
+
+}
+
+.i_am_button_holding-subjects {
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    background-color: var(--darkbrown);
+    font-size: 11px;
+}
+
+.Cma_heading {
+    height: 11rem;
+}
+.cmacard2 h5 {
+    color: var(--darkbrown);
+}
+
+.section_a{
+    margin: 0.5rem 1rem 0.5rem 13rem;
+}
+
+
+
 @media (max-width: 900px) {
-    
     .Cmapart1_main_container {
-        
-        padding: 4rem 0.5rem 2rem 2rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+      padding: 4rem 0.5rem 2rem 0.5rem; /* Remove the left padding and set it to 0.5rem */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
     }
-    .cmacard1{
-        margin-top: 3%;
-       padding: 0%; 
-   
-   }
-   .cmacard2{
-    margin-top: 3%;
-       padding: 0;
-   }
-    /* .launchPad_row{
-       padding-left: 3rem;
+  
+    .cmacard1 {
+      margin-top: 3%;
+      padding: 0%;
     }
+  
+    .cmacard2 {
+      margin-top: 3%;
+      padding: 0;
+    }
+  
     
-    .launchPad_row2{
-       padding-left: 3rem;
-    } */
-   }
+  }
+  
+  @media (max-width: 767px) {
+    .Cmapart1_main_container {
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  
+    .cmacard1 {
+      margin-top: 4rem;
+      padding: 0%;
+    }
+  
+    .cmacard2 {
+      margin-top: 3%;
+      padding: 0;
+    }
+    .i_am_button_holding-subjects{
+        margin-left: 0.1rem;
+        margin-right: 0.1rem;
+        font-size: 9px;
+    }
+    .i_am_button{
+        font-size: 9px;
+    }
+    .content_buttons{
+        
+    }
+  }
+  
