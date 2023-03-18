@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-function SectionB() {
+function SectionF() {
 
     return (
         
@@ -72,4 +72,4 @@ function SectionB() {
   
 }
 
-export default SectionB;
+export default SectionF;

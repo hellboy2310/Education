@@ -7,7 +7,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SupportPage from './components/supportPage';
 import Cmapart1 from './components/cmapart1';
 import SectionA from './components/sectionA/sectionA';
-
+import SectionB from './components/sectionB/sectionB';
+import SectionC from './components/sectionC/sectionC';
+import SectionD from './components/sectionD/sectionD';
+import SectionE from './components/sectionE/sectionE';
+import SectionF from './components/sectionF/sectionF';
 
 
 function App() {
@@ -20,6 +24,11 @@ function App() {
         <Route path = "/support" element = {<SupportPage/>}/>
         <Route path = "/cmapart1" element = {<Cmapart1/>}/>
         <Route path = "/sectionA" element = {<SectionA/>}/>
+        <Route path = "/sectionB" element = {<SectionB/>}/>
+        <Route path = "/sectionC" element = {<SectionC/>}/>
+        <Route path = "/sectionD" element = {<SectionD/>}/>
+        <Route path = "/sectionE" element = {<SectionE/>}/>
+        <Route path = "/sectionF" element = {<SectionF/>}/>
 
       </Routes>
     </BrowserRouter>
