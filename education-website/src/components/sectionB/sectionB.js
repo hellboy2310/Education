@@ -47,23 +47,23 @@ function SectionB() {
             </div>
             
 <div class="card-body section_a ">
-<Link to = '/sectionA' style={{textDecoration:'none'}}>A 1.1</Link> 
+<Link to = '/sectionA' style={{textDecoration:'none'}}>B 1.1</Link> 
 </div>
 
 <div class="card-body section_a">
-<Link to = '/sectionB' style={{textDecoration:'none',}}>A 1.2</Link> 
+<Link to = '/sectionB' style={{textDecoration:'none',}}>B 1.2</Link> 
 </div>
 <div class="card-body section_a">
-<Link to = '/sectionC' style={{textDecoration:'none',}}>A 1.3</Link> 
+<Link to = '/sectionC' style={{textDecoration:'none',}}>B 1.3</Link> 
 </div>
 <div class="card-body section_a">
-<Link to = '/sectionD' style={{textDecoration:'none',}}>A 1.4</Link> 
+<Link to = '/sectionD' style={{textDecoration:'none',}}>B 1.4</Link> 
 </div>
 <div class="card-body section_a">
-<Link to = '/sectionE' style={{textDecoration:'none',}}>A 2.1</Link> 
+<Link to = '/sectionE' style={{textDecoration:'none',}}>B 2.1</Link> 
 </div>
 <div class="card-body section_a">
-<Link to = '/sectionF' style={{textDecoration:'none',}}>A 2.2</Link> 
+<Link to = '/sectionF' style={{textDecoration:'none',}}>B 2.2</Link> 
 </div>
 </div>
         
