@@ -22,15 +22,15 @@
 
 .launchPad_row {
 
-    padding-left: 13%;
-    padding-right: 3%;
+    padding-left: 13rem;
+    padding-right: 2rem;
 }
 
 .launchPad_row2 {
-    padding-top: 2%;
-    padding-left: 13%;
-    padding-right: 2%;
-    padding-bottom: 1%;
+    padding-top: 1rem;
+    padding-left: 13rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
 }
 
 .Study_Lounge_card {
@@ -41,4 +41,26 @@
 .Book_session {
     height: 350px;
     background-color: var(--lightest);
+}
+@media (max-width: 900px) {
+    
+ .launchPad_container{
+       
+    width: 100%;
+    margin-top: 2rem;
+ }   
+ .launchPad_row{
+    padding: 0%; 
+
+}
+.launchPad_row2{
+    padding: 0;
+}
+ /* .launchPad_row{
+    padding-left: 3rem;
+ }
+ 
+ .launchPad_row2{
+    padding-left: 3rem;
+ } */
 }

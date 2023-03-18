@@ -36,7 +36,7 @@ function LaunchPad() {
                 </div>
             </div>
             <div class="row launchPad_row2">
-                <div class="col-lg-6 ">
+                <div class="col-lg-6 col-md-12 col-sm-12 ">
                     <div class="card welcome_card_launchPad">
                         <div class="card-body">
                             <h5 class="card-title">Special title treatment</h5>

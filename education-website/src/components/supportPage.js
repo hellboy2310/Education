@@ -21,6 +21,7 @@ function SupportPage() {
         //Overall, this code is likely being used to register a new user or
         // subscriber to a website or service by sending an email with the specified subject and body content.
         const res = await fetch("/register", {
+            // The fetch() method is a built-in JavaScript function that is used to make HTTP requests.
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

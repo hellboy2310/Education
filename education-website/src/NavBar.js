@@ -1,56 +1,67 @@
-import React from 'react'
-import './NavBar.css'
+import React, { useState } from 'react';
+import './NavBar.css';
+
 function NavBar() {
+  const [showNavItems, setShowNavItems] = useState(false);
+
+  const toggleNavItems = () => {
+    setShowNavItems(!showNavItems);
+  };
+
   return (
     <div className='NavBar_Container'>
-      <ul className="nav justify-content-end">
-        <li className="nav-item">
-
-          <a className="nav-link disabled" href="#"><i class="fa fa-suitcase" aria-hidden="true"></i></a>
+      <button className='nav-toggle' onClick={toggleNavItems}>
+        <i className='fa fa-bars menu-button-icon' aria-hidden='true'></i>
+      </button>
+      <ul className={`nav ${showNavItems ? 'show' : ''}`}>
+        <li className='nav-item'>
+          <a className='nav-link disabled' href='#'>
+            <i className='fa fa-suitcase' aria-hidden='true'></i>
+          </a>
         </li>
-        <li className="nav-item">
-          <a className="nav-link disabled" href="#"><i class="fa fa-calculator" aria-hidden="true"></i></a>
-
-
+        <li className='nav-item'>
+          <a className='nav-link disabled' href='#'>
+            <i className='fa fa-calculator' aria-hidden='true'></i>
+          </a>
         </li>
-        <li className="nav-item">
-          <a className="nav-link disabled" href="#"><i class="fa fa-video-camera" aria-hidden="true"></i></a>
+        <li className='nav-item'>
+          <a className='nav-link disabled' href='#'>
+            <i className='fa fa-video-camera' aria-hidden='true'></i>
+          </a>
         </li>
-        <li className="nav-item">
-          <a className="nav-link disabled"><i class="fa fa-bell" aria-hidden="true"></i></a>
+        <li className='nav-item'>
+          <a className='nav-link disabled' href='#'>
+            <i className='fa fa-bell' aria-hidden='true'></i>
+          </a>
         </li>
-        <li className="nav-item">
-          <a className="nav-link disabled" href="#"><i class="fa fa-book" aria-hidden="true"></i></a>
-
+        <li className='nav-item'>
+          <a className='nav-link disabled' href='#'>
+            <i className='fa fa-book' aria-hidden='true'></i>
+          </a>
         </li>
-        <li className="nav-item">
-          <a className="nav-link disabled" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
-
+        <li className='nav-item'>
+          <a className='nav-link disabled' href='#'>
+            <i className='fa fa-search' aria-hidden='true'></i>
+          </a>
         </li>
-
-        <li className="nav-item">
-          <a className="nav-link disabled" href="#"><i class="fa fa-address-book-o" aria-hidden="true"></i></a>
-
+        <li className='nav-item'>
+          <a className='nav-link disabled' href='#'>
+            <i className='fa fa-address-book-o' aria-hidden='true'></i>
+          </a>
         </li>
-
-
-        <li className="nav-item">
-          <a className="nav-link disabled" href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
-
+        <li className='nav-item'>
+          <a className='nav-link disabled' href='#'>
+            <i className='fa fa-phone' aria-hidden='true'></i>
+          </a>
         </li>
-
-        <li className="nav-item">
-          <a className="nav-link disabled" href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
-
+        <li className='nav-item'>
+          <a className='nav-link disabled' href='#'>
+            <i className='fa fa-user' aria-hidden='true'></i>
+          </a>
         </li>
-
-
-
-
-
       </ul>
     </div>
-  )
+  );
 }
 
-export default NavBar
+export default NavBar;
