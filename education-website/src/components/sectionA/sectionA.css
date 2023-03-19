@@ -67,10 +67,10 @@
  
   @media screen and (min-width: 900px) {
     .section_a{
-      margin-left: 2rem;
+      margin-left: 1rem;
       margin-right: 2rem;
       margin-top: 1rem;
-      width: 95%;
+      width: 97%;
       height: 4rem;
      background-color:  var(--lightest);
      border-radius: 10px;

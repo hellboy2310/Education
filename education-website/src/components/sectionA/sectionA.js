@@ -84,9 +84,10 @@ function SectionA() {
       </div>
       {isOpen && (
         <ul className="dropdown__list section_a">
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
+          <button type="button" class="btn btn-outline-primary"> <i class="fa fa-book"></i> E-BOOK</button>
+          <button type="button" class="btn btn-outline-primary"><i class="fa fa-play"></i> LAUNCH VIDEO</button>
+          <button type="button" class="btn btn-outline-primary"><i class="fa fa-bars"></i> LAUNCH MCQ</button>
+        <button type="button" class="btn btn-outline-primary"><i class="fa fa-file"></i>LAUNCH ESSAY</button>
         </ul>
       )}
     </div> 
@@ -98,9 +99,10 @@ function SectionA() {
       </div>
       {isOpen2 && (
         <ul className="dropdown__list  section_a">
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
+           <button type="button" class="btn btn-outline-primary"> <i class="fa fa-book"></i> E-BOOK</button>
+          <button type="button" class="btn btn-outline-primary"><i class="fa fa-play"></i> LAUNCH VIDEO</button>
+          <button type="button" class="btn btn-outline-primary"><i class="fa fa-bars"></i> LAUNCH MCQ</button>
+        <button type="button" class="btn btn-outline-primary"><i class="fa fa-file"></i>LAUNCH ESSAY</button>
         </ul>
       )}
     </div> 
@@ -112,9 +114,10 @@ function SectionA() {
       </div>
       {isOpen3 && (
         <ul className="dropdown__list  section_a">
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
+            <button type="button" class="btn btn-outline-primary"> <i class="fa fa-book"></i> E-BOOK</button>
+          <button type="button" class="btn btn-outline-primary"><i class="fa fa-play"></i> LAUNCH VIDEO</button>
+          <button type="button" class="btn btn-outline-primary"><i class="fa fa-bars"></i> LAUNCH MCQ</button>
+        <button type="button" class="btn btn-outline-primary"><i class="fa fa-file"></i>LAUNCH ESSAY</button>
         </ul>
       )}
     </div> 
@@ -126,9 +129,10 @@ function SectionA() {
       </div>
       {isOpen4 && (
         <ul className="dropdown__list  section_a">
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
+           <button type="button" class="btn btn-outline-primary"> <i class="fa fa-book"></i> E-BOOK</button>
+          <button type="button" class="btn btn-outline-primary"><i class="fa fa-play"></i> LAUNCH VIDEO</button>
+          <button type="button" class="btn btn-outline-primary"><i class="fa fa-bars"></i> LAUNCH MCQ</button>
+        <button type="button" class="btn btn-outline-primary"><i class="fa fa-file"></i>LAUNCH ESSAY</button>
         </ul>
       )}
     </div> 
@@ -140,9 +144,10 @@ function SectionA() {
       </div>
       {isOpen5 && (
         <ul className="dropdown__list  section_a">
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
+            <button type="button" class="btn btn-outline-primary"> <i class="fa fa-book"></i> E-BOOK</button>
+          <button type="button" class="btn btn-outline-primary"><i class="fa fa-play"></i> LAUNCH VIDEO</button>
+          <button type="button" class="btn btn-outline-primary"><i class="fa fa-bars"></i> LAUNCH MCQ</button>
+        <button type="button" class="btn btn-outline-primary"><i class="fa fa-file"></i>LAUNCH ESSAY</button>
         </ul>
       )}
     </div> 
