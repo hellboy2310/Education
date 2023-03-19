@@ -1,11 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import {videoData, videos} from '../videoData'
 
 import  {  useEffect } from 'react';
 import './sectionA.css'
 import { useState,useRef } from 'react';
 
 function SectionA() {
+  let  viedoesArr = videos.results
   const dropdownRef = useRef(null);
 
   const [isOpen, setIsOpen1] = useState(false);
