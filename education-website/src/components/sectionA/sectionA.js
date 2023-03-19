@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Video1 from './video1';
 import { videoData, videos } from '../videoData'
 
 import { useEffect } from 'react';
@@ -41,6 +42,7 @@ function SectionA() {
 
 
     <div class="row Cmapart1_main_container" >
+
       <div class=" col-lg-5 ">
         <div class="card cmacard1 col-sm-12">
           <div class="card-body">
@@ -162,11 +164,16 @@ function SectionA() {
         {videosArr.map((movieEle) => (
           <div class="card ">
             <div class="card-body video-card">
-             <button><h5 class="card-title" >{movieEle.original_title}</h5></button> 
+
+              <button>
+                
+
+                <Link to='/video1'> <h5 class="card-title">{movieEle.original_title}</h5></Link>
+              </button>
             </div>
           </div>
-
         ))}
+
       </div>)
       }
 
@@ -191,3 +198,4 @@ export default SectionA;
 
 
 
+{/* window.location.href = 'https://www.youtube.com/watch?v=2F8zBNzmROM&t=6s&ab_channel=BhaveshPurohit'; */ }

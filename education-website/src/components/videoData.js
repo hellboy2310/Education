@@ -17,6 +17,7 @@ export const videos = {
         video: false,
         vote_average: 4.7,
         vote_count: 50,
+        video_url:'https://www.youtube.com/watch?v=2F8zBNzmROM&t=6s&ab_channel=BhaveshPurohit'
       },
      
       {
@@ -35,6 +36,7 @@ export const videos = {
         video: false,
         vote_average: 7.8,
         vote_count: 4925,
+        video_url:'https://www.youtube.com/watch?v=2F8zBNzmROM&t=6s&ab_channel=BhaveshPurohit'
       },
       {
         adult: false,
@@ -52,6 +54,7 @@ export const videos = {
         video: false,
         vote_average: 6.9,
         vote_count: 511,
+        video_url:'https://www.youtube.com/watch?v=2F8zBNzmROM&t=6s&ab_channel=BhaveshPurohit'
       },
       
       {
@@ -70,6 +73,7 @@ export const videos = {
         video: false,
         vote_average: 7.5,
         vote_count: 3555,
+        video_url:'https://www.youtube.com/watch?v=2F8zBNzmROM&t=6s&ab_channel=BhaveshPurohit'
       },
       {
         adult: false,
@@ -87,6 +91,7 @@ export const videos = {
         video: false,
         vote_average: 7.4,
         vote_count: 1009,
+        video_url:'https://www.youtube.com/watch?v=2F8zBNzmROM&t=6s&ab_channel=BhaveshPurohit'
       },
       {
         adult: false,
@@ -104,6 +109,7 @@ export const videos = {
         video: false,
         vote_average: 8.1,
         vote_count: 4416,
+        video_url:'https://www.youtube.com/watch?v=2F8zBNzmROM&t=6s&ab_channel=BhaveshPurohit'
       },
       {
         adult: false,
@@ -121,6 +127,7 @@ export const videos = {
         video: false,
         vote_average: 8.5,
         vote_count: 212,
+        video_url:'https://www.youtube.com/watch?v=2F8zBNzmROM&t=6s&ab_channel=BhaveshPurohit'
       },
     ],
     total_pages: 500,

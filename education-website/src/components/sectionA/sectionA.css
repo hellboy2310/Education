@@ -76,6 +76,7 @@
   position: absolute;
   width: 75%  ;
  }
+ 
  .cross-button {
   position: absolute;
   top: 10px;
@@ -83,6 +84,10 @@
   font-size: 24px;
   cursor: pointer;
   z-index: 1;
+}
+.pid{
+  padding-left: 15rem;
+  padding-top: 5rem;
 }
 
  
