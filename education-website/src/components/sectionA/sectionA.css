@@ -63,7 +63,28 @@
     width: 96%;
     
   }
- 
+ .active_videos{
+  position: absolute;
+  width: 75%;
+  
+ }
+ .video-card{
+  
+  height:4rem;
+ }
+ .videos-list{
+  position: absolute;
+  width: 75%  ;
+ }
+ .cross-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1;
+}
+
  
   @media screen and (min-width: 900px) {
     .section_a{

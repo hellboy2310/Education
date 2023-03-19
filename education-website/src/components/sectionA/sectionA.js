@@ -1,20 +1,22 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import {videoData, videos} from '../videoData'
+import { videoData, videos } from '../videoData'
 
-import  {  useEffect } from 'react';
+import { useEffect } from 'react';
 import './sectionA.css'
-import { useState,useRef } from 'react';
+import { useState, useRef } from 'react';
 
 function SectionA() {
-  let  viedoesArr = videos.results
-  const dropdownRef = useRef(null);
+  let videosArr = videos.results
+
 
   const [isOpen, setIsOpen1] = useState(false);
   const [isOpen2, setIsOpen2] = useState(false);
-  const[isOpen3,setIsOpen3] = useState(false);
-  const[isOpen4,setIsOpen4] = useState(false);
-  const[isOpen5,setIsOpen5] = useState(false);
+  const [isOpen3, setIsOpen3] = useState(false);
+  const [isOpen4, setIsOpen4] = useState(false);
+  const [isOpen5, setIsOpen5] = useState(false);
+  const [sectionAvideos, setIssectionAvideos] = useState(false);
+
   // useEffect(() => {
   //   function handleClickOutside(event) {
   //     if (isOpen && dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -29,7 +31,7 @@ function SectionA() {
   //   };
   // }, [isOpen]);
 
-  
+
 
 
 
@@ -78,83 +80,98 @@ function SectionA() {
         </div>
       </div>
 
-    
-      <div  className="dropdown">
-      <div className="dropdown__header section_a " onClick={() => setIsOpen1(!isOpen)}>
-        Financial Statements
-        <i class="fa fa-arrow-down"></i>
-      </div>
-      {isOpen && (
-        <ul className="dropdown__list section_a">
-          <button type="button" class="btn btn-outline-primary"> <i class="fa fa-book"></i> E-BOOK</button>
-          <button type="button" class="btn btn-outline-primary"><i class="fa fa-play"></i> LAUNCH VIDEO</button>
-          <button type="button" class="btn btn-outline-primary"><i class="fa fa-bars"></i> LAUNCH MCQ</button>
-        <button type="button" class="btn btn-outline-primary"><i class="fa fa-file"></i>LAUNCH ESSAY</button>
-        </ul>
-      )}
-    </div> 
 
-    <div  className="dropdown">
-      <div className="dropdown__header section_a  " onClick={() => setIsOpen2(!isOpen2)}>
-        Fair value measurements
-        <i class="fa fa-arrow-down"></i>
-      </div>
-      {isOpen2 && (
-        <ul className="dropdown__list  section_a">
-           <button type="button" class="btn btn-outline-primary"> <i class="fa fa-book"></i> E-BOOK</button>
-          <button type="button" class="btn btn-outline-primary"><i class="fa fa-play"></i> LAUNCH VIDEO</button>
-          <button type="button" class="btn btn-outline-primary"><i class="fa fa-bars"></i> LAUNCH MCQ</button>
-        <button type="button" class="btn btn-outline-primary"><i class="fa fa-file"></i>LAUNCH ESSAY</button>
-        </ul>
-      )}
-    </div> 
-
-    <div  className="dropdown">
-      <div className="dropdown__header section_a  " onClick={() => setIsOpen3(!isOpen3)}>
-        Account Receivable
-        <i class="fa fa-arrow-down"></i>
-      </div>
-      {isOpen3 && (
-        <ul className="dropdown__list  section_a">
+      <div className="dropdown">
+        <div className="dropdown__header section_a " onClick={() => setIsOpen1(!isOpen)}>
+          Financial Statements
+          <i class="fa fa-arrow-down"></i>
+        </div>
+        {isOpen && (
+          <ul className="dropdown__list section_a">
             <button type="button" class="btn btn-outline-primary"> <i class="fa fa-book"></i> E-BOOK</button>
-          <button type="button" class="btn btn-outline-primary"><i class="fa fa-play"></i> LAUNCH VIDEO</button>
-          <button type="button" class="btn btn-outline-primary"><i class="fa fa-bars"></i> LAUNCH MCQ</button>
-        <button type="button" class="btn btn-outline-primary"><i class="fa fa-file"></i>LAUNCH ESSAY</button>
-        </ul>
-      )}
-    </div> 
-
-    <div  className="dropdown">
-      <div className="dropdown__header section_a  " onClick={() => setIsOpen4(!isOpen4)}>
-        Inventory
-        <i class="fa fa-arrow-down"></i>
+            <button type="button" class="btn btn-outline-primary" onClick={() => setIssectionAvideos(!sectionAvideos)}><i class="fa fa-play" ></i> LAUNCH VIDEO</button>
+            <button type="button" class="btn btn-outline-primary"><i class="fa fa-bars" ></i> LAUNCH MCQ</button>
+            <button type="button" class="btn btn-outline-primary"><i class="fa fa-file"></i>LAUNCH ESSAY</button>
+          </ul>
+        )}
       </div>
-      {isOpen4 && (
-        <ul className="dropdown__list  section_a">
-           <button type="button" class="btn btn-outline-primary"> <i class="fa fa-book"></i> E-BOOK</button>
-          <button type="button" class="btn btn-outline-primary"><i class="fa fa-play"></i> LAUNCH VIDEO</button>
-          <button type="button" class="btn btn-outline-primary"><i class="fa fa-bars"></i> LAUNCH MCQ</button>
-        <button type="button" class="btn btn-outline-primary"><i class="fa fa-file"></i>LAUNCH ESSAY</button>
-        </ul>
-      )}
-    </div> 
 
-    <div  className="dropdown">
-      <div className="dropdown__header section_a  " onClick={() => setIsOpen5(!isOpen5)}>
-        Investment in equity and debt
-        <i class="fa fa-arrow-down"></i>
-      </div>
-      {isOpen5 && (
-        <ul className="dropdown__list  section_a">
+      <div className="dropdown">
+        <div className="dropdown__header section_a  " onClick={() => setIsOpen2(!isOpen2)}>
+          Fair value measurements
+          <i class="fa fa-arrow-down"></i>
+        </div>
+        {isOpen2 && (
+          <ul className="dropdown__list  section_a">
             <button type="button" class="btn btn-outline-primary"> <i class="fa fa-book"></i> E-BOOK</button>
-          <button type="button" class="btn btn-outline-primary"><i class="fa fa-play"></i> LAUNCH VIDEO</button>
-          <button type="button" class="btn btn-outline-primary"><i class="fa fa-bars"></i> LAUNCH MCQ</button>
-        <button type="button" class="btn btn-outline-primary"><i class="fa fa-file"></i>LAUNCH ESSAY</button>
-        </ul>
-      )}
-    </div> 
+            <button type="button" class="btn btn-outline-primary"><i class="fa fa-play"></i> LAUNCH VIDEO</button>
+            <button type="button" class="btn btn-outline-primary"><i class="fa fa-bars"></i> LAUNCH MCQ</button>
+            <button type="button" class="btn btn-outline-primary"><i class="fa fa-file"></i>LAUNCH ESSAY</button>
+          </ul>
+        )}
+      </div>
+
+      <div className="dropdown">
+        <div className="dropdown__header section_a  " onClick={() => setIsOpen3(!isOpen3)}>
+          Account Receivable
+          <i class="fa fa-arrow-down"></i>
+        </div>
+        {isOpen3 && (
+          <ul className="dropdown__list  section_a">
+            <button type="button" class="btn btn-outline-primary"> <i class="fa fa-book"></i> E-BOOK</button>
+            <button type="button" class="btn btn-outline-primary"><i class="fa fa-play"></i> LAUNCH VIDEO</button>
+            <button type="button" class="btn btn-outline-primary"><i class="fa fa-bars"></i> LAUNCH MCQ</button>
+            <button type="button" class="btn btn-outline-primary"><i class="fa fa-file"></i>LAUNCH ESSAY</button>
+          </ul>
+        )}
+      </div>
+
+      <div className="dropdown">
+        <div className="dropdown__header section_a  " onClick={() => setIsOpen4(!isOpen4)}>
+          Inventory
+          <i class="fa fa-arrow-down"></i>
+        </div>
+        {isOpen4 && (
+          <ul className="dropdown__list  section_a">
+            <button type="button" class="btn btn-outline-primary"> <i class="fa fa-book"></i> E-BOOK</button>
+            <button type="button" class="btn btn-outline-primary"><i class="fa fa-play"></i> LAUNCH VIDEO</button>
+            <button type="button" class="btn btn-outline-primary"><i class="fa fa-bars"></i> LAUNCH MCQ</button>
+            <button type="button" class="btn btn-outline-primary"><i class="fa fa-file"></i>LAUNCH ESSAY</button>
+          </ul>
+        )}
+      </div>
+
+      <div className="dropdown">
+        <div className="dropdown__header section_a  " onClick={() => setIsOpen5(!isOpen5)}>
+          Investment in equity and debt
+          <i class="fa fa-arrow-down"></i>
+        </div>
+        {isOpen5 && (
+          <ul className="dropdown__list  section_a">
+            <button type="button" class="btn btn-outline-primary"> <i class="fa fa-book"></i> E-BOOK</button>
+            <button type="button" class="btn btn-outline-primary"><i class="fa fa-play"></i> LAUNCH VIDEO</button>
+            <button type="button" class="btn btn-outline-primary"><i class="fa fa-bars"></i> LAUNCH MCQ</button>
+            <button type="button" class="btn btn-outline-primary"><i class="fa fa-file"></i>LAUNCH ESSAY</button>
+          </ul>
+        )}
+      </div>
+
+      {sectionAvideos && (<div class="videos-list ">
+
+        <i class="fa fa-times cross-button" onClick={() => setIssectionAvideos(!sectionAvideos)} aria-hidden="true"></i>
+        {videosArr.map((movieEle) => (
+          <div class="card ">
+            <div class="card-body video-card">
+             <button><h5 class="card-title" >{movieEle.original_title}</h5></button> 
+            </div>
+          </div>
+
+        ))}
+      </div>)
+      }
+
     </div>
-    
+
 
 
 
