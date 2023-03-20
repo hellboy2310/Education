@@ -1,12 +1,48 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Video3 from './video3'
+import { videoData, videos } from '../videoData'
 
-function SectionC() {
+
+import './sectionB.css'
+import { useState, useRef } from 'react';
+
+function SectionA() {
+    let videosArr = videos.results
+
+
+    const [isOpen, setIsOpen1] = useState(false);
+    const [isOpen2, setIsOpen2] = useState(false);
+    const [isOpen3, setIsOpen3] = useState(false);
+    const [isOpen4, setIsOpen4] = useState(false);
+    const [isOpen5, setIsOpen5] = useState(false);
+    const [sectionAvideos, setIssectionAvideos] = useState(false);
+
+    // useEffect(() => {
+    //   function handleClickOutside(event) {
+    //     if (isOpen && dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+    //       setIsOpen1(false);
+    //     }
+    //   }
+
+    //   document.addEventListener('mousedown', handleClickOutside);
+
+    //   return () => {
+    //     document.removeEventListener('mousedown', handleClickOutside);
+    //   };
+    // }, [isOpen]);
+
+
+
+
+
 
     return (
-        
+
+
 
         <div class="row Cmapart1_main_container" >
+
             <div class=" col-lg-5 ">
                 <div class="card cmacard1 col-sm-12">
                     <div class="card-body">
@@ -19,13 +55,13 @@ function SectionC() {
 
                                     </div>
                                     <div class="btn-group mr-2" role="group" aria-label="Second group">
-                                       <Link to = '/cmapart1'> <button type="button" class="btn btn-secondary i_am_button_holding-subjects"><i class="fa fa-home" aria-hidden="true"></i></button></Link>
-                                      <Link to='/sectionA'><button type="button" class="btn btn-secondary i_am_button_holding-subjects">A</button></Link>  
-                                      <Link to = '/sectionB'>  <button type="button" class="btn btn-secondary i_am_button_holding-subjects">B</button></Link>
-                                        <Link to = '/sectionC'><button type="button" class="btn btn-secondary i_am_button_holding-subjects">C</button></Link>
-                                        <Link to = '/sectionD'><button type="button" class="btn btn-secondary i_am_button_holding-subjects">D</button></Link>
-                                        <Link to = '/sectionE'><button type="button" class="btn btn-secondary i_am_button_holding-subjects">E</button></Link>
-                                        <Link to = '/sectionF'><button type="button" class="btn btn-secondary i_am_button_holding-subjects">F</button></Link>
+                                        <Link to='/cmapart1'> <button type="button" class="btn btn-secondary i_am_button_holding-subjects"><i class="fa fa-home" aria-hidden="true"></i></button></Link>
+                                        <Link to='/sectionA'><button type="button" class="btn btn-secondary i_am_button_holding-subjects"> A</button></Link>
+                                        <Link to='/sectionB'>  <button type="button" class="btn btn-secondary i_am_button_holding-subjects">B</button></Link>
+                                        <Link to='/sectionC'><button type="button" class="btn btn-secondary i_am_button_holding-subjects">C</button></Link>
+                                        <Link to='/sectionD'><button type="button" class="btn btn-secondary i_am_button_holding-subjects">D</button></Link>
+                                        <Link to='/sectionE'><button type="button" class="btn btn-secondary i_am_button_holding-subjects">E</button></Link>
+                                        <Link to='/sectionF'><button type="button" class="btn btn-secondary i_am_button_holding-subjects">F</button></Link>
                                     </div>
                                     <div class="btn-group" role="group" aria-label="Third group">
                                         <button type="button" class="btn btn-secondary i_am_button"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
@@ -45,31 +81,120 @@ function SectionC() {
                     </div>
                 </div>
             </div>
-            
-<div class="card-body section_a ">
-<Link to = '/sectionA' style={{textDecoration:'none'}}>C 1.1</Link> 
-</div>
 
-<div class="card-body section_a">
-<Link to = '/sectionB' style={{textDecoration:'none',}}>C 1.2</Link> 
-</div>
-<div class="card-body section_a">
-<Link to = '/sectionC' style={{textDecoration:'none',}}>C 1.3</Link> 
-</div>
-<div class="card-body section_a">
-<Link to = '/sectionD' style={{textDecoration:'none',}}>C 1.4</Link> 
-</div>
-<div class="card-body section_a">
-<Link to = '/sectionE' style={{textDecoration:'none',}}>C 2.1</Link> 
-</div>
-<div class="card-body section_a">
-<Link to = '/sectionF' style={{textDecoration:'none',}}>C 2.2</Link> 
-</div>
-</div>
-        
-        
-)
-  
+
+            <div className="dropdown">
+                <div className="dropdown__header section_a " onClick={() => setIsOpen1(!isOpen)}>
+                    Strategic Planning
+                    <i class="fa fa-arrow-down"></i>
+                </div>
+                {isOpen && (
+                    <ul className="dropdown__list section_a">
+                        <button type="button" class="btn btn-outline-primary"> <i class="fa fa-book"></i> E-BOOK</button>
+                        <button type="button" class="btn btn-outline-primary" onClick={() => setIssectionAvideos(!sectionAvideos)}><i class="fa fa-play" ></i> LAUNCH VIDEO</button>
+                        <button type="button" class="btn btn-outline-primary"><i class="fa fa-bars" ></i> LAUNCH MCQ</button>
+                        <button type="button" class="btn btn-outline-primary"><i class="fa fa-file"></i>LAUNCH ESSAY</button>
+                    </ul>
+                )}
+            </div>
+
+            <div className="dropdown">
+                <div className="dropdown__header section_a  " onClick={() => setIsOpen2(!isOpen2)}>
+                    Budget Concepts
+                    <i class="fa fa-arrow-down"></i>
+                </div>
+                {isOpen2 && (
+                    <ul className="dropdown__list  section_a">
+                        <button type="button" class="btn btn-outline-primary"> <i class="fa fa-book"></i> E-BOOK</button>
+                        <button type="button" class="btn btn-outline-primary" onClick={() => setIssectionAvideos(!sectionAvideos)}><i class="fa fa-play" ></i> LAUNCH VIDEO</button>
+                        <button type="button" class="btn btn-outline-primary"><i class="fa fa-bars"></i> LAUNCH MCQ</button>
+                        <button type="button" class="btn btn-outline-primary"><i class="fa fa-file"></i>LAUNCH ESSAY</button>
+                    </ul>
+                )}
+            </div>
+
+            <div className="dropdown">
+                <div className="dropdown__header section_a  " onClick={() => setIsOpen3(!isOpen3)}>
+                    ForeCast Techniques
+                    <i class="fa fa-arrow-down"></i>
+                </div>
+                {isOpen3 && (
+                    <ul className="dropdown__list  section_a">
+                        <button type="button" class="btn btn-outline-primary"> <i class="fa fa-book"></i> E-BOOK</button>
+                        <button type="button" class="btn btn-outline-primary" onClick={() => setIssectionAvideos(!sectionAvideos)}><i class="fa fa-play" ></i> LAUNCH VIDEO</button>
+                        <button type="button" class="btn btn-outline-primary"><i class="fa fa-bars"></i> LAUNCH MCQ</button>
+                        <button type="button" class="btn btn-outline-primary"><i class="fa fa-file"></i>LAUNCH ESSAY</button>
+                    </ul>
+                )}
+            </div>
+
+            <div className="dropdown">
+                <div className="dropdown__header section_a  " onClick={() => setIsOpen4(!isOpen4)}>
+                    Budget Methodologies
+                    <i class="fa fa-arrow-down"></i>
+                </div>
+                {isOpen4 && (
+                    <ul className="dropdown__list  section_a">
+                        <button type="button" class="btn btn-outline-primary"> <i class="fa fa-book"></i> E-BOOK</button>
+                        <button type="button" class="btn btn-outline-primary" onClick={() => setIssectionAvideos(!sectionAvideos)}><i class="fa fa-play" ></i> LAUNCH VIDEO</button>
+                        <button type="button" class="btn btn-outline-primary"><i class="fa fa-bars"></i> LAUNCH MCQ</button>
+                        <button type="button" class="btn btn-outline-primary"><i class="fa fa-file"></i>LAUNCH ESSAY</button>
+                    </ul>
+                )}
+            </div>
+
+            <div className="dropdown">
+                <div className="dropdown__header section_a  " onClick={() => setIsOpen5(!isOpen5)}>
+                    Annual Profit Plan
+                    <i class="fa fa-arrow-down"></i>
+                </div>
+                {isOpen5 && (
+                    <ul className="dropdown__list  section_a">
+                        <button type="button" class="btn btn-outline-primary"> <i class="fa fa-book"></i> E-BOOK</button>
+                        <button type="button" class="btn btn-outline-primary" onClick={() => setIssectionAvideos(!sectionAvideos)}><i class="fa fa-play" ></i> LAUNCH VIDEO</button>
+                        <button type="button" class="btn btn-outline-primary"><i class="fa fa-bars"></i> LAUNCH MCQ</button>
+                        <button type="button" class="btn btn-outline-primary"><i class="fa fa-file"></i>LAUNCH ESSAY</button>
+                    </ul>
+                )}
+            </div>
+
+            {sectionAvideos && (<div class="videos-list ">
+
+                <i class="fa fa-times cross-button" onClick={() => setIssectionAvideos(!sectionAvideos)} aria-hidden="true"></i>
+                {videosArr.map((movieEle) => (
+                    <div class="card ">
+                        <div class="card-body video-card">
+
+                            <button>
+
+
+                                <Link to='/video2'> <h5 class="card-title">{movieEle.genre_ids}</h5></Link>
+                            </button>
+                        </div>
+                    </div>
+                ))}
+
+            </div>)
+            }
+
+        </div>
+
+
+
+
+
+    )
+
 }
 
-export default SectionC;
+export default SectionA;
+
+
+
+
+
+
+
+
+
+

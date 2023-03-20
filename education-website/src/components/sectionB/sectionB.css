@@ -1,150 +1,191 @@
 :root {
-    --darkpurple: #18122B;
-    --white: #ffffff;
-    --lightest: #F1DEC9;
-    --iconColors: #C8B6A6;
-    --darkbrown: #8D7B68;
+  --darkpurple: #18122B;
+  --white: #ffffff;
+  --lightest: #F1DEC9;
+  --iconColors: #C8B6A6;
+  --darkbrown: #8D7B68;
+}
+body{
+background-color: var(--darkbrown);
 }
 
 
 .Cmapart1_main_container {
-    padding-left: 13rem;
-    padding-top: 6rem;
-    
+  padding-left: 13rem;
+  padding-top: 6rem;
+  
 
 
 }
 
 .cmacard1,
 .cmacard2 {
-    background-color: var(--lightest);
-    height: 20rem;
+  background-color: var(--lightest);
+  height: 20rem;
 }
 
 
 .cmacard1 h2 {
-    color: var(--darkbrown);
-    padding-top: 2rem;
+  color: var(--darkbrown);
+  padding-top: 2rem;
 }
 
 .content_buttons {
-    justify-content: space-around;
+  justify-content: space-around;
 
 }
 
 .box-holding-buttons {
-    height: 4rem;
-    background-color: var(--iconColors);
+  height: 4rem;
+  background-color: var(--iconColors);
 }
 
 .i_am_button {
-    background-color: var(--darkbrown);
-    font-size: 11px;
+  background-color: var(--darkbrown);
+  font-size: 11px;
 
 }
 
 .i_am_button_holding-subjects {
-    margin-left: 0.2rem;
-    margin-right: 0.2rem;
-    background-color: var(--darkbrown);
-    font-size: 11px;
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+  background-color: var(--darkbrown);
+  font-size: 11px;
 }
 
 .Cma_heading {
-    height: 11rem;
+  height: 11rem;
 }
 .cmacard2 h5 {
-    color: var(--darkbrown);
+  color: var(--darkbrown);
 }
 
 
-  .card_content {
-    
-    width: 96%;
-    
+.card_content {
+  
+  width: 96%;
+  
+}
+.active_videos{
+position: absolute;
+width: 75%;
+
+}
+.video-card{
+
+height:4rem;
+}
+.videos-list{
+position: absolute;
+width: 75%  ;
+}
+
+.cross-button {
+position: absolute;
+top: 10px;
+right: 10px;
+font-size: 24px;
+cursor: pointer;
+z-index: 1;
+}
+.pid{
+padding-left: 15rem;
+padding-top: 5rem;
+
+
+}
+
+
+
+@media screen and (min-width: 900px) {
+  .section_a{
+    margin-left: 1rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    width: 97%;
+    height: 4rem;
+   background-color:  var(--lightest);
+   border-radius: 10px;
+   align-items: center;
+   display: flex;
+   justify-content: space-between;
+   position: relative;
   }
  
- 
-  @media screen and (min-width: 900px) {
-    .section_a{
-      margin-left: 2rem;
-      margin-right: 2rem;
-      margin-top: 1rem;
-      width: 60%;
-      height: 4rem;
-     background-color:  var(--lightest);
-     border-radius: 10px;
-     align-items: center;
-     display: flex;
-     justify-content: start;
-    }
-  }
+}
 
 
 
 
 
 @media (max-width: 900px) {
-    .Cmapart1_main_container {
-      padding: 4rem 0.5rem 2rem 0.5rem; /* Remove the left padding and set it to 0.5rem */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      
-    }
-  
-    .cmacard1 {
-      margin-top: 3%;
-      padding: 0%;
-    }
-  
-    .cmacard2 {
-      margin-top: 3%;
-      padding: 0;
-    }
-  
+  .Cmapart1_main_container {
+    padding: 4rem 0.5rem 2rem 0.5rem; /* Remove the left padding and set it to 0.5rem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     
   }
   
-  @media (max-width: 767px) {
-    .Cmapart1_main_container {
-      
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-    .section_a{
-     
-      width: 90%;
-      height: 4rem;
-      margin-top: 1rem;
-     background-color:  var(--lightest);
-     border-radius: 10px;
-     align-items: center;
-     display: flex;
-     justify-content: start;
 
-     
-    }
-    .cmacard1 {
-      margin-top: 4rem;
-      padding: 0%;
-    }
+  .cmacard1 {
+    margin-top: 3%;
+    padding: 0%;
+  }
+
+  .cmacard2 {
+    margin-top: 3%;
+    padding: 0;
+  }
+
   
-    .cmacard2 {
-      margin-top: 3%;
-      padding: 0;
-    }
-    .i_am_button_holding-subjects{
-        margin-left: 0.1rem;
-        margin-right: 0.1rem;
-        font-size: 9px;
-    }
-    .i_am_button{
-        font-size: 9px;
-    }
-  
+} 
+
+
+
+@media (max-width: 767px) {
+  .Cmapart1_main_container {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .section_a{
+   
+    width: 90%;
+    height: 4rem;
+    margin-top: 1rem;
+   background-color:  var(--lightest);
+   border-radius: 10px;
+   align-items: center;
+   display: flex;
+   justify-content: start;
+
+   
+  }
+  .pid{
+    padding-left: 3%;
+    padding-top: 10%;
+  }
+
+  .cmacard1 {
+    margin-top: 4rem;
+    padding: 0%;
+  }
+
+  .cmacard2 {
+    margin-top: 3%;
+    padding: 0;
+  }
+  .i_am_button_holding-subjects{
+      margin-left: 0.1rem;
+      margin-right: 0.1rem;
+      font-size: 9px;
+  }
+  .i_am_button{
+      font-size: 9px;
   }
   
+}
