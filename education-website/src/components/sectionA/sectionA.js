@@ -106,7 +106,7 @@ function SectionA() {
         {isOpen2 && (
           <ul className="dropdown__list  section_a">
             <button type="button" class="btn btn-outline-primary"> <i class="fa fa-book"></i> E-BOOK</button>
-            <button type="button" class="btn btn-outline-primary"><i class="fa fa-play"></i> LAUNCH VIDEO</button>
+            <button type="button" class="btn btn-outline-primary" onClick={() => setIssectionAvideos(!sectionAvideos)}><i class="fa fa-play" ></i> LAUNCH VIDEO</button>
             <button type="button" class="btn btn-outline-primary"><i class="fa fa-bars"></i> LAUNCH MCQ</button>
             <button type="button" class="btn btn-outline-primary"><i class="fa fa-file"></i>LAUNCH ESSAY</button>
           </ul>
@@ -121,7 +121,7 @@ function SectionA() {
         {isOpen3 && (
           <ul className="dropdown__list  section_a">
             <button type="button" class="btn btn-outline-primary"> <i class="fa fa-book"></i> E-BOOK</button>
-            <button type="button" class="btn btn-outline-primary"><i class="fa fa-play"></i> LAUNCH VIDEO</button>
+            <button type="button" class="btn btn-outline-primary" onClick={() => setIssectionAvideos(!sectionAvideos)}><i class="fa fa-play" ></i> LAUNCH VIDEO</button>
             <button type="button" class="btn btn-outline-primary"><i class="fa fa-bars"></i> LAUNCH MCQ</button>
             <button type="button" class="btn btn-outline-primary"><i class="fa fa-file"></i>LAUNCH ESSAY</button>
           </ul>
@@ -136,7 +136,7 @@ function SectionA() {
         {isOpen4 && (
           <ul className="dropdown__list  section_a">
             <button type="button" class="btn btn-outline-primary"> <i class="fa fa-book"></i> E-BOOK</button>
-            <button type="button" class="btn btn-outline-primary"><i class="fa fa-play"></i> LAUNCH VIDEO</button>
+            <button type="button" class="btn btn-outline-primary" onClick={() => setIssectionAvideos(!sectionAvideos)}><i class="fa fa-play" ></i> LAUNCH VIDEO</button>
             <button type="button" class="btn btn-outline-primary"><i class="fa fa-bars"></i> LAUNCH MCQ</button>
             <button type="button" class="btn btn-outline-primary"><i class="fa fa-file"></i>LAUNCH ESSAY</button>
           </ul>
@@ -151,7 +151,7 @@ function SectionA() {
         {isOpen5 && (
           <ul className="dropdown__list  section_a">
             <button type="button" class="btn btn-outline-primary"> <i class="fa fa-book"></i> E-BOOK</button>
-            <button type="button" class="btn btn-outline-primary"><i class="fa fa-play"></i> LAUNCH VIDEO</button>
+            <button type="button" class="btn btn-outline-primary" onClick={() => setIssectionAvideos(!sectionAvideos)}><i class="fa fa-play" ></i> LAUNCH VIDEO</button>
             <button type="button" class="btn btn-outline-primary"><i class="fa fa-bars"></i> LAUNCH MCQ</button>
             <button type="button" class="btn btn-outline-primary"><i class="fa fa-file"></i>LAUNCH ESSAY</button>
           </ul>
