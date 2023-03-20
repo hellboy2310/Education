@@ -4,7 +4,7 @@ import Video3 from './video3'
 import { videoData, videos } from '../videoData'
 
 
-import './sectionB.css'
+import './sectionC.css'
 import { useState, useRef } from 'react';
 
 function SectionA() {
@@ -18,22 +18,7 @@ function SectionA() {
     const [isOpen5, setIsOpen5] = useState(false);
     const [sectionAvideos, setIssectionAvideos] = useState(false);
 
-    // useEffect(() => {
-    //   function handleClickOutside(event) {
-    //     if (isOpen && dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-    //       setIsOpen1(false);
-    //     }
-    //   }
-
-    //   document.addEventListener('mousedown', handleClickOutside);
-
-    //   return () => {
-    //     document.removeEventListener('mousedown', handleClickOutside);
-    //   };
-    // }, [isOpen]);
-
-
-
+   
 
 
 
@@ -85,7 +70,7 @@ function SectionA() {
 
             <div className="dropdown">
                 <div className="dropdown__header section_a " onClick={() => setIsOpen1(!isOpen)}>
-                    Strategic Planning
+                    Cost and Variance Measure
                     <i class="fa fa-arrow-down"></i>
                 </div>
                 {isOpen && (
@@ -100,7 +85,7 @@ function SectionA() {
 
             <div className="dropdown">
                 <div className="dropdown__header section_a  " onClick={() => setIsOpen2(!isOpen2)}>
-                    Budget Concepts
+                    Responsibility Measure
                     <i class="fa fa-arrow-down"></i>
                 </div>
                 {isOpen2 && (
@@ -115,7 +100,7 @@ function SectionA() {
 
             <div className="dropdown">
                 <div className="dropdown__header section_a  " onClick={() => setIsOpen3(!isOpen3)}>
-                    ForeCast Techniques
+                    performance Measure
                     <i class="fa fa-arrow-down"></i>
                 </div>
                 {isOpen3 && (
@@ -168,7 +153,7 @@ function SectionA() {
                             <button>
 
 
-                                <Link to='/video2'> <h5 class="card-title">{movieEle.genre_ids}</h5></Link>
+                                <Link to='/video3'> <h5 class="card-title">{movieEle.popularity}</h5></Link>
                             </button>
                         </div>
                     </div>

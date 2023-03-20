@@ -14,6 +14,9 @@ import SectionE from './components/sectionE/sectionE';
 import SectionF from './components/sectionF/sectionF';
 import Video1 from './components/sectionA/video1';
 import Video2 from './components/sectionB/video2';
+import Video3 from './components/sectionC/video3';
+import Video4 from './components/sectionD/video4';
+import Video5 from './components/sectionE/video5';
 
 
 function App() {
@@ -33,6 +36,9 @@ function App() {
         <Route path = "/sectionF" element = {<SectionF/>}/>
         <Route path = "/video1" element = {<Video1/>}/>
         <Route path = "/video2" element = {<Video2/>}/>
+        <Route path = "/video3" element = {<Video3/>}/>
+        <Route path = "/video4" element = {<Video4/>}/>
+        
       </Routes>
     </BrowserRouter>
 //     <div>
