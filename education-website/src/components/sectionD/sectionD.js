@@ -70,7 +70,7 @@ function SectionA() {
 
             <div className="dropdown">
                 <div className="dropdown__header section_a " onClick={() => setIsOpen1(!isOpen)}>
-                    Cost and Variance Measure
+                    Measurement Concepts
                     <i class="fa fa-arrow-down"></i>
                 </div>
                 {isOpen && (
@@ -85,7 +85,7 @@ function SectionA() {
 
             <div className="dropdown">
                 <div className="dropdown__header section_a  " onClick={() => setIsOpen2(!isOpen2)}>
-                    Responsibility Measure
+                    Costing System
                     <i class="fa fa-arrow-down"></i>
                 </div>
                 {isOpen2 && (
@@ -100,7 +100,7 @@ function SectionA() {
 
             <div className="dropdown">
                 <div className="dropdown__header section_a  " onClick={() => setIsOpen3(!isOpen3)}>
-                    performance Measure
+                    Overhead Cost
                     <i class="fa fa-arrow-down"></i>
                 </div>
                 {isOpen3 && (
@@ -115,7 +115,7 @@ function SectionA() {
 
             <div className="dropdown">
                 <div className="dropdown__header section_a  " onClick={() => setIsOpen4(!isOpen4)}>
-                    Budget Methodologies
+                    Business Process Improvement
                     <i class="fa fa-arrow-down"></i>
                 </div>
                 {isOpen4 && (
