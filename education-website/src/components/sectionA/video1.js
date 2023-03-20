@@ -1,23 +1,37 @@
-import React from 'react'
-import { videos } from '../videoData';
-import {Container} from 'react-bootstrap'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from 'react';
+
+import ReactPlayer from 'react-player';
+
 
 function Video1() {
-    
-    return (
-    
-   <div class='pid'>
-    <Container>
-    <iframe src = 'https://www.youtube.com/watch?v=2F8zBNzmROM&t=6s&ab_channel=BhaveshPurohit' allowFullScreen title = 'youtube video'></iframe>
-      </Container>
-    
-    </div> 
-    
-    );
+
+
+  return (
+    <div className='pid'>
+
+<ReactPlayer controls url='https://youtu.be/6zbIpE3Rqqc'  />
+
+
+    </div>
+  );
 };
 
+export default Video1;
 
 
 
-export default Video1
+{/* <video controls >
+        <source src='./sectionA_video1.mp4' type='video/mp4' />
+      </video> */}
+{/* {videosArr.map((ele)=>(
+     
+        <div class="card-body video-card">
+
+          <button>
+            
+          
+           <p>{ele.release_date}</p>
+          </button>
+        </div>
+     
+      ))} */}
