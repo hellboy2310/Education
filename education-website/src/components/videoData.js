@@ -17,7 +17,8 @@ export const videos = {
         video: false,
         vote_average: 4.7,
         vote_count: 50,
-        video_url:'https://www.youtube.com/watch?v=2F8zBNzmROM&t=6s&ab_channel=BhaveshPurohit'
+        video_url:'https://www.youtube.com/watch?v=2F8zBNzmROM&t=6s&ab_channel=BhaveshPurohit',
+        
       },
      
       {
